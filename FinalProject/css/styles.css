@@ -1,0 +1,157 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #1C1C1C; /* Almost black background */
+  color: #C0C0C0; /* Silver text */
+}
+
+header {
+  background: #B22222; /* Red */
+  color: #FFD700; /* Gold text */
+  padding: 20px;
+  border-radius: 5px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #FFD700; /* Gold links */
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #FFFFFF; /* White on hover */
+}
+
+.active {
+  border-bottom: 2px solid #FFD700;
+}
+
+main {
+  background: #4F4F4F; /* Medium Gray for content area */
+  padding: 20px;
+  border-radius: 5px;
+}
+
+#quote-of-the-day {
+  margin: 2rem 0;
+  padding: 1rem;
+  background: #C0C0C0; /* Silver background */
+  color: #1C1C1C; /* Black text */
+  border-radius: 8px;
+}
+
+#slideshow {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+#slideshow img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 3px solid #FFD700;
+}
+
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 10px;
+  background: #B22222;
+  color: #FFD700;
+  border-radius: 5px;
+}
+.project {
+  margin: 2rem 0;
+  padding: 1rem;
+  background: #1c1c1c;
+  color: #f1f1f1;
+  border: 1px solid #b8860b; /* gold accent */
+  border-radius: 8px;
+}
+
+.project h2 {
+  color: #b22222; /* deep red */
+}
+
+.project-images {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+}
+
+.project-img {
+  width: 45%;
+  border-radius: 8px;
+  border: 2px solid #b8860b;
+  transition: transform 0.3s ease;
+}
+
+.project-img:hover {
+  transform: scale(1.05);
+}
+.skills-container {
+  padding: 2rem;
+  display: grid;
+  gap: 2rem;
+}
+
+.skills-section h2 {
+  color: #b22222; /* deep red */
+  margin-bottom: 1rem;
+}
+
+.skill-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: #1c1c1c;
+  border: 1px solid #b8860b; /* gold */
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.skill-card img {
+  width: 40px;
+  height: 40px;
+}
+
+.skill-card h3 {
+  flex: 1;
+  color: #f1f1f1;
+}
+
+.progress-bar {
+  width: 200px;
+  height: 10px;
+  background: #333;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  transition: width 0.5s ease;
+}
+
+/* Progress Levels */
+.progress.java { width: 80%; background: #b22222; }
+.progress.html { width: 90%; background: #b8860b; }
+.progress.js { width: 75%; background: #c0c0c0; }
+.progress.server { width: 70%; background: #b22222; }
+.progress.network { width: 65%; background: #b8860b; }
+.progress.git { width: 80%; background: #c0c0c0; }
+.progress.ide { width: 85%; background: #b22222; }

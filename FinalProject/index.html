@@ -1,0 +1,48 @@
+<!-- HTML FILE (index.html) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home - My Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Portfolio</h1>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="skills.html">My Skills</a>
+      <a href="projects.html">My Projects</a>
+      <a href="about.html">About Me</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Quote of the Day -->
+    <section id="quote-of-the-day">
+      <h2>Quote of the Day</h2>
+      <p id="quote-text">Loading quote...</p>
+      <p id="quote-author"></p>
+      <button onclick="loadNewQuote()" style="margin-top: 10px; padding: 8px 16px; cursor: pointer;">New Quote</button>
+      
+      <!-- Required attribution for free API usage -->
+      <p style="font-size: 0.8em; color: #666; margin-top: 10px;">
+        Quotes provided by <a href="https://zenquotes.io/" target="_blank">ZenQuotes API</a>
+      </p>
+    </section>
+
+    <!-- Image slideshow -->
+    <section id="slideshow">
+      <img id="slide" src="images/slide1.jpg" alt="Slideshow image" width="600" />
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Eric Ziehm</p>
+  </footer>
+
+  <!-- Load script only once at the bottom -->
+  <script src="js/main.js"></script>
+</body>
+</html>
