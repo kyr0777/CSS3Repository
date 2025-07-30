@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5-Day Forecast</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Today</a>
+        <a href="forecast.html">5-Day Forecast</a>
+    </nav>
+
+    <div class="container">
+        <h1>5-Day Forecast</h1>
+        <div class="input-group">
+            <input type="text" id="cityInput" placeholder="Enter city name">
+            <button id="getForecastBtn">Get Forecast</button>
+        </div>
+        <div id="forecastContainer" class="forecast-grid"></div>
+    </div>
+
+    <script src="scripts/forecast.js"></script>
+</body>
+</html>
